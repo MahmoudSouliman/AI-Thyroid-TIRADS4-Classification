@@ -31,7 +31,7 @@ We applied a precise fine-tuning strategy by unfreezing only the **last 60 layer
 
 ### 4. Morpho-Boost Decision Logic
 A custom-built **post-processing algorithm** that adjusts the CNN's probability based on morphological evidence. For instance, nodules with an Aspect Ratio > 1.1 (Taller-than-wide) receive an automatic sensitivity boost, reducing the false-negative rate in malignant cases.
-![System Architecture](GitHub.png)
+![System Architecture](001.png)
 ## 📊 Key Results
 - **Optimized Recall:** Using a class-weighting strategy (1.8x penalty for missed malignant cases).
 - **Architecture:** Pre-trained DenseNet121 + Global Average Pooling + Fully Connected Hybrid Layers.
